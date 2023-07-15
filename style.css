@@ -1,0 +1,146 @@
+/* global */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #f7ecde;
+}
+
+/* global */
+
+
+
+/* bookmark  */
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all .7s;
+}
+
+.bookmark:hover h1::before {
+    height: 50px;
+}
+
+.bookmark {
+    padding-bottom: 50px;
+    width: 70%;
+    border-bottom: dotted rgb(0, 0, 0) 2px;
+}
+
+.bookmark-icon {
+
+    font-size: 40px;
+    background: -webkit-linear-gradient(#247b23, #bea52b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+
+    background: -webkit-linear-gradient(#20711e, #bea52b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* bookmark */
+
+
+
+/* form */
+form .btn {
+    background-color: #d1512d;
+    transition: all .5s;
+    color: white;
+}
+
+form .btn:hover {
+    background-color: #bb4120;
+    color: white;
+}
+
+
+
+
+.chek {
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+    display: none;
+}
+
+.chek1 {
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+    display: none;
+}
+
+form {
+    padding-bottom: 50px;
+    width: 70%;
+    border-bottom: dotted rgb(0, 0, 0) 2px;
+}
+
+.form-control:focus {
+    border-color: #bc8a39;
+    box-shadow: 0 0 0 0.25rem #d3a76055;
+}
+
+
+
+/* form */
+
+
+/* table */
+
+
+.table-width {
+    width: 75%;
+}
+.btn1 .btn{
+    background-color:#9bb326 ;
+    color: white;
+}
+.btn1 .btn:hover{
+    background-color:#a1af58 ;
+    color: white;
+}
+
+.btn2 .btn{
+    background-color:#ee4c4c ;
+    color: white;
+}
+.btn2 .btn:hover{
+    background-color:#c63f3f ;
+    color: white;
+}
+
+
+
+.btn3 .btn{
+    background-color:#ee4c4c ;
+    color: white;
+}
+.btn3 .btn:hover{
+    background-color:#c63f3f ;
+    color: white;
+}
+
+
+/* table */
