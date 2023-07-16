@@ -144,3 +144,34 @@ form {
 
 
 /* table */
+
+
+
+
+
+/* modal */
+
+.circle1{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.circle2{
+    width: 15px;
+    height: 15px;
+    background-color:rgb(203, 200, 15);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.circle3{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* modal */
+

@@ -13,7 +13,7 @@
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="madia-query.css">
+    <link rel="stylesheet" href="madia-query.css">
 
 
 </head>
@@ -42,8 +42,8 @@
         </div>
         <div class="position-relative">
 
-            <input placeholder="BOOKMARK NAME" onkeyup="validsitename(this.value)" name="bookmarkname" class="form-control rounded  mb-5" id="sitename"
-                type="text">
+            <input placeholder="BOOKMARK NAME" onkeyup="validsitename(this.value)" name="bookmarkname"
+                class="form-control rounded  mb-5" id="sitename" type="text">
             <i id="rightmarksite" class="fa-solid  chek fa-check"></i>
             <i id="wrongmarksite" class="fa-solid  chek fa-xmark"></i>
         </div>
@@ -51,14 +51,16 @@
             <label class="h5  mb-3" for="url"><i class="fa-solid me-2  fa-paperclip"></i>site url</label>
         </div>
         <div class="position-relative">
-            <input onkeyup="validurl(this.value)" placeholder="WEBSITE URL" name="url name" class="form-control rounded" id="url" type="text">
+            <input onkeyup="validurl(this.value)" placeholder="WEBSITE URL" name="url name" class="form-control rounded"
+                id="url" type="text">
             <i id="rightmarkurl" class="fa-solid chek1 fa-check"></i>
             <i id="wrongmarkurl" class="fa-solid chek1 fa-xmark"></i>
         </div>
 
 
         <div class="text-center">
-            <button type="button" class="btn mt-4 shadow rounded px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >submit</button>
+            <button type="button" onclick="adddata()" id="submitbtn" data-bs-toggle="modal"
+                class="btn mt-4 shadow rounded px-5" data-bs-target="#staticBackdrop">submit</button>
         </div>
 
     </form>
@@ -75,13 +77,14 @@
                 <th>delete</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
+        <tbody id="tbody">
+            <!-- <tr>
                 <th>1</th>
                 <th>shehab</th>
                 <th>
                     <div class="btn1">
-                        <button class="btn shadow "><i class="fa-regular me-2 fa-eye"></i>Visit</button>
+                        <a href="Https://Www.Google.Com/" target="_blank"> <button class="btn shadow "><i
+                                    class="fa-regular me-2 fa-eye"></i>Visit</button></a>
                     </div>
                 </th>
                 <th>
@@ -94,36 +97,42 @@
                         <button class="btn shadow  "><i class="fa-solid me-2 fa-trash"></i>Delete</button>
                     </div>
                 </th>
-            </tr>
+            </tr> -->
         </tbody>
     </table>
     <!-- table -->
 
 
 
-<!-- Button trigger modal -->
-<div class="">
-   
-      
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- modal -->
+    <div class="">
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title circle1" id="staticBackdropLabel"></h5>
+                        <h5 class="modal-title circle2" id="staticBackdropLabel"></h5>
+                        <h5 class="modal-title circle3" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="mb-5"> Site Name or Url is not valid, Please follow the rules below :</h4>
+
+                        <p><i class="fa-solid text-danger  fa-arrow-right"></i> Site name must contain at least 3
+                            characters</p>
+                        <p><i class="fa-solid text-danger fa-arrow-right"></i> Site URL must be a valid one</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ok</button>
+
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Understood</button>
-            </div>
-          </div>
         </div>
-      </div>
-</div>
+    </div>
+    <!-- modal -->
 
 
 
