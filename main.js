@@ -84,11 +84,11 @@ function validurl(value) {
 
 
 
-var dataarr = []
-if (localStorage.getItem("bookmark", "dataarr") != null) {
-    dataarr = JSON.parse(localStorage.getItem("bookmark"))
-    displaydata()
-}
+
+if (localStorage.bookmark != null) {
+    dataarr = JSON.parse(localStorage.bookmark)
+
+} else { dataarr = [] }
 
 function adddata() {
 
@@ -102,21 +102,30 @@ function adddata() {
     var validurl = /^((ftp|http|https):\/\/)?www\.([A-z]+)\.([A-z]{2,6})\/?([a-z]{2,8})?$/;
     var validsiteurl = validurl.test(urlinput.value.toLowerCase().trim())
 
-    //   if (validname == true && validsiteurl == true) {
-    //        
-    //     }
 
 
-    if (validname == true && validsiteurl == true) {
-        dataarr.push(data)
+
+    if (sitenameinput.value != "") {
+
+        if (bookmarkmood == "submit") {
+            dataarr.push(data)
+
+        } else {
+            dataarr[index] = data
+            submitbutton.innerHTML = "submit"
+            submitbutton.setAttribute("type", "submit")
+        }
+        clearinputs()
+
     }
-    clearinputs()
-
-
-
-
 
     displaydata()
+
+
+
+
+
+
 
 
     localStorage.setItem("bookmark", JSON.stringify(dataarr))
@@ -165,6 +174,7 @@ function displaydata() {
 
     document.getElementById("tbody").innerHTML = table
 }
+displaydata()
 
 
 function deleteitem(x) {
@@ -179,8 +189,19 @@ function updatedata(i) {
     submitbutton.innerHTML = "Update"
     urlinput.value = dataarr[i].urlinput
     sitenameinput.value = dataarr[i].sitenameinput
+
     bookmarkmood = "update"
     index = i
+    wrongmarksiteli.style.display = "none"
+    rightmarksiteli.style.display = "block"
+    sitenameinput.style.cssText = `
+    border-color: #62bc39;
+    box-shadow: 0 0 0 0.25rem #b0d36055;  `
+    wrongmarkurlli.style.display = "none"
+    rightmarkurlli.style.display = "block"
+    urlinput.style.cssText = `
+    border-color: #62bc39;
+    box-shadow: 0 0 0 0.25rem #b0d36055;  `
 
 }
 
