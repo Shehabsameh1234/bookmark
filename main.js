@@ -155,17 +155,17 @@ function displaydata() {
     <th>
     <div class="btn1">
     <a href="${dataarr[i].urlinput}" target="_blank"> <button class="btn shadow "><i
-                class="fa-regular me-2 fa-eye"></i>Visit</button></a>
+                class="fa-regular me-2 margin-media fa-eye"></i>Visit</button></a>
 </div>
     </th>
     <th>
         <div class="btn2">
-            <button onclick="updatedata(${i})" class="btn shadow "><i class="fa-solid me-2 fa-wrench"></i>update</button>
+            <button onclick="updatedata(${i})" class="btn shadow "><i class="fa-solid  margin-media me-2 fa-wrench"></i>update</button>
         </div>
     </th>
     <th>
         <div class="btn3">
-            <button onclick="deleteitem(${i})" class="btn shadow  "><i class="fa-solid me-2 fa-trash"></i>Delete</button>
+            <button onclick="deleteitem(${i})" class="btn shadow  "><i class="fa-solid  margin-media me-2 fa-trash"></i>Delete</button>
         </div>
     </th>
 </tr>`
@@ -204,8 +204,6 @@ function updatedata(i) {
     box-shadow: 0 0 0 0.25rem #b0d36055;  `
 
 }
-
-
 
 
 
