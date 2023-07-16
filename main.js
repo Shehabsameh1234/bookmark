@@ -9,6 +9,9 @@ var wrongmarksiteli = document.getElementById("wrongmarksite")
 var rightmarkurlli = document.getElementById("rightmarkurl")
 var wrongmarkurlli = document.getElementById("wrongmarkurl")
 
+
+
+// check the validation of site name
 function validsitename(value) {
     var validsite = /^[a-zA-Z ]{3,20}$/;
     var validname = validsite.test(value)
@@ -30,6 +33,11 @@ function validsitename(value) {
         box-shadow: 0 0 0 0.25rem #ca8e7855;`
     }
 }
+// check the validation of site name
+
+
+
+// check the validation of site url
 
 function validurl(value) {
     var validurl = /^((ftp|http|https):\/\/)?www\.([A-z]+)\.([A-z]{2,6})\/?([a-z]{2,8})?$/;
@@ -53,4 +61,7 @@ function validurl(value) {
         box-shadow: 0 0 0 0.25rem #ca8e7855;`
     }
 }
+
+// check the validation of site url
+
 
