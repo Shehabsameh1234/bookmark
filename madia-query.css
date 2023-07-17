@@ -22,7 +22,10 @@ font-size: 8px;
   .bookmark-width{
     font-size: 18px !important;
   }
-   
+  .font-p{
+    font-size: 10px;
+    }
+  
 
     
 }
@@ -51,7 +54,10 @@ font-size: 8px;
     font-size: 20px !important;
   }
   
-    
+  .font-p{
+    font-size: 10px;
+    }
+   
     
 }
 
@@ -68,6 +74,10 @@ font-size: 8px;
     width: 70%;
    
 }
+
+.font-p{
+  font-size: 12px;
+  }
 
 .margin-media{
   margin-left: 10px;

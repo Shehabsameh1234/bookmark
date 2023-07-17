@@ -63,6 +63,8 @@ h2 {
 
 
 /* form */
+
+
 form .btn {
     background-color: #d1512d;
     transition: all .5s;
@@ -73,9 +75,6 @@ form .btn:hover {
     background-color: #bb4120;
     color: white;
 }
-
-
-
 
 .chek {
     position: absolute;
@@ -102,14 +101,14 @@ form {
     box-shadow: 0 0 0 0.25rem #d3a76055;
 }
 
-
+.font-p{
+font-size: 14px;
+}
 
 /* form */
 
 
 /* table */
-
-
 .table-width {
     width: 75%;
 }
@@ -130,8 +129,6 @@ form {
     background-color:#c63f3f ;
     color: white;
 }
-
-
 
 .btn3 .btn{
     background-color:#ee4c4c ;
