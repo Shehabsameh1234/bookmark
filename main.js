@@ -220,6 +220,12 @@ function updatedata(i) {
     border-color: #62bc39;
     box-shadow: 0 0 0 0.25rem #b0d36055;  `
 
+scroll({
+    top:0,
+    behavior:"smooth"
+})
+
+
 }
 // update item
 
