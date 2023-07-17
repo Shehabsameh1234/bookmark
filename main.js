@@ -108,7 +108,11 @@ function adddata() {
     if (sitenameinput.value != "") {
 
         if (bookmarkmood == "submit") {
-            dataarr.push(data)
+            if (validname == true && validsiteurl == true) {
+                dataarr.push(data)
+            }
+
+
 
         } else {
             dataarr[index] = data
