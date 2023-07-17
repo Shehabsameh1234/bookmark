@@ -115,9 +115,12 @@ function adddata() {
 
 
         } else {
-            dataarr[index] = data
-            submitbutton.innerHTML = "submit"
-            submitbutton.setAttribute("type", "submit")
+            if (validname == true && validsiteurl == true) {
+                dataarr[index] = data 
+                          submitbutton.setAttribute("type", "submit")
+                         
+            } 
+             submitbutton.innerHTML = "submit"
         }
         clearinputs()
 
